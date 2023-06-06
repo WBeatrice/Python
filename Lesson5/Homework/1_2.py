@@ -10,8 +10,9 @@ a = int(input("Enter the first number: "))
 b = int(input("Enter the second number: "))
 
 def Sum_of_numbers(a,b):
-    sum = a + b
-    return sum
+    if b == 0:
+        return a
+    return 1 + Sum_of_numbers(a, b - 1)
     
 if a < 0 or b < 0:
     print("The entered number is negative!")

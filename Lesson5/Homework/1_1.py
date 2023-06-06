@@ -11,11 +11,9 @@ b = int(input("Enter the degree: "))
 
 
 def Exponentiation_of_a_number(a, b):
-    if a == 1 or a == 0:
-        return a
-    else:
-        a **= b
-        return a
+    if b == 0:
+        return 1
+    return a * Exponentiation_of_a_number(a, b - 1)
  
 
 print(Exponentiation_of_a_number(a,b))
