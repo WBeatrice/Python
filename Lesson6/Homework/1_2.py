@@ -4,9 +4,16 @@
 
 # диапозон значений == 5, 15
 
-import random
-n = int(input("Enter the size of the array: "))
-Array = [random.randint(5, 15) for x in range(n)]
-print(Array)
+list_1 = [-5, 9, 0, 3, -1, -2, 1, 4, -2, 10, 2, 0, -9, 8, 10, -9, 0, -5, -5, 7]
+min_number = int(input())
+max_number = int(input())
+for i in range(len(list_1)):
+    if min_number <= list_1[i] <= max_number:
+        print(i)
 
-print([i for i in range(0, len(Array))])
+#-----------------------------------------------------------------------------------------
+# list = [int(i) for i in input().split())]
+# min_num = int(input())
+# max_num = int(input())
+
+# print([int for ind, val in enumerate(list) if min_num <= val <= max_num])

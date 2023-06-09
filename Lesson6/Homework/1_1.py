@@ -7,3 +7,11 @@ a1 = int(input("Enter the first element: "))
 n = int(input("Enter the difference: ")) 
 d = int(input("Enter the number of items: "))
 print(a1 + (n-1) * d)
+
+#------------------------------------------------
+
+# a1 = int(input())
+# d = int(input())
+# n = int(input())
+# for i in range(n):
+#     print(a1 + i * d, end = " ")
