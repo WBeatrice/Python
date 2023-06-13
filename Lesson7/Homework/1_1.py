@@ -18,7 +18,7 @@
 # п п п or пп пп пп - долэно вывести нет ритма 
 # па пе пу
 
-
+#Проблемы с выводом п п п
 def Phythm(text):
     string = text.lower().split()
     phrase = lambda x: sum(1 for i in x if i in 'аиеёоуыэюя')
@@ -29,3 +29,16 @@ def Phythm(text):
 
 poem = input("Enter the verse of Wiggy-Pooh: ")
 print(Phythm(poem))
+
+#-----------------------------------------------------------------------
+
+# dictionary = 'аиеёоуыэюя'
+# poem = input().split()
+# result = [sum([True for j in word.lower() if j in dictionary]) for word in poem]
+
+# print(result)
+
+# if all(result) and len(set(result)) == 1:
+#     print("Парам пам-пам")
+# else:
+#     print("Пам парам")
